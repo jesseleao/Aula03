@@ -9,7 +9,9 @@ public class OperadorNao {
 		System.out.println("Por favor, digite seu tipo de usuário:");
 		tipoUsuario = leitor.next();
 		
-		//Aqui é preciso criar um if que verifique se o tipo de usuário digitado é DIFERENTE de "administrador"
+		if (!tipoUsuario.equals("administrador")) {
+			System.out.println("Atençaõ, usuario sem poderes administrativos. Algumas tarefas serão bloqueadas");
+		}
 		
 		leitor.close();
 		
